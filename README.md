@@ -6,4 +6,4 @@ Modules used: datetime, pandas, sqlite3, random, time, os
 
 Edit the files to change configurations.
 
-Please see Explained.ipynb for code explanations.
+Please see [Explained.ipynb](Explained.ipynb) for code explanation.
