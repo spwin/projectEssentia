@@ -113,7 +113,7 @@ def readCSVFromFolder(folder, deleteFiles=True):
 
 
 def saveDataFrameToDb(dataframe, table_name='trades', if_exists='append', db_name='database.db'):
-    con = db.connect(db_name)
+    con = db.connect('../' + db_name)
     normalizedToDB = dataframe.copy()
     normalizedToDB.columns = [x.lower().replace(" ", "_") for x in normalizedToDB.columns]
     normalizedToDB.to_sql(table_name, con, index=False, if_exists=if_exists)
